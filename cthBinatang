@@ -1,0 +1,41 @@
+interface Daging{
+	void daging();
+}
+interface Telur{
+	void telur();
+}
+
+abstract class Binatang implements Daging,Telur{
+	
+}
+
+class Ayam extends Binatang{
+
+	public void daging(){
+		System.out.println("ini daging ayam bisa dimakan");
+	}
+	public void telur(){
+		System.out.println("Telur ayam bs dimakan");
+	}
+}
+
+
+class Hiu extends Binatang{
+	public void daging(){
+		System.out.println("ini daging hiu tdk bs dimakan");
+	}
+	public void telur(){
+		System.out.println("ini telur hiu tidak bsa dimakan");
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+		//kelas binatang , ada ayam sama hiu , ada yang diambil daging dan ada yang telurnya ,
+		//dan ada kedua nya dan tidak bs keduanya
+		Ayam a = new Ayam();
+		Hiu b = new Hiu();
+		
+		
+	}
+}
